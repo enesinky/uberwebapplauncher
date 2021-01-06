@@ -1,0 +1,3 @@
+include ':uberwebapplauncher'
+include ':app'
+rootProject.name = "uberwebapplauncherdemo"

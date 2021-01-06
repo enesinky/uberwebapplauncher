@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Uber Web App Launcher</string>
+    <string name="pick_up_place">Pick Up Place:</string>
+    <string name="give_a_name">Give A Name</string>
+    <string name="client_id">Client ID:</string>
+    <string name="enter_client_id">Enter Client ID</string>
+    <string name="pick_up_latitude">Pick Up Latitude:</string>
+    <string name="pick_up_longitude">Pick Up Longitude:</string>
+    <string name="drop_off_place">Drop-off Place:</string>
+    <string name="drop_off_latitude">Drop-off Latitude:</string>
+    <string name="drop_off_longitude">Drop-off Longitude</string>
+    <string name="go_to_uber_web">GO TO UBER WEB</string>
+</resources>
