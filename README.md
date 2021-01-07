@@ -39,8 +39,12 @@ Kotlin:
     startActivity(intent)
 ```
 
+
 **Output Uri:**
+
 [Go To Request Ride](https://m.uber.com/looking?drop=%7B%22latitude%22:37.78618285698499,%22longitude%22:-122.40003724864789,%22addressLine1%22:%22San%20Francisco%20Museum%20of%20Modern%20Art%22%7D&pickup=%7B%22latitude%22:37.775837823803705,%22longitude%22:-122.41803507478294,%22addressLine1%22:%22Uber%20HQ%22%7D&vehicle=3bb777a3-7072-4d8c-a8b6-0cd9dcfe650e)
+
+
 
 
 # Implementation
