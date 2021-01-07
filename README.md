@@ -2,10 +2,7 @@
 
 # Uber Web App Launcher Library
 
-This library helps Android developers to perform Uber functionality by using Uber's Web App.
-Target users are those who weren't installed Uber native app on their devices.
-
-The library helps to continue Uber actions by web browser.
+This library helps Android developers to let their users continue Uber ride request by using web browser.
 
  - [x] Your Android app can open Uber's request ride page on web browser.
  - [x] Users are not redirected to download app from Play Store.
