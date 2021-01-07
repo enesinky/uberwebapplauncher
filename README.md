@@ -7,6 +7,10 @@ Target users are those who weren't installed Uber native app on their devices.
 
 The library helps to continue Uber actions by web browser.
 
+ - [x] Your Android app can open Uber's request ride page on web browser.
+ - [x] Users are not redirected to download app from Play Store.
+ - [x] Uber Android app is not required. 
+ - [x] Compatible with Huawei Mobile Services.
 
 # Example
 
@@ -35,6 +39,10 @@ Kotlin:
     startActivity(intent)
 ```
 
+**Output Uri:**
+[Go To Request Ride](https://m.uber.com/looking?drop=%7B%22latitude%22:37.78618285698499,%22longitude%22:-122.40003724864789,%22addressLine1%22:%22San%20Francisco%20Museum%20of%20Modern%20Art%22%7D&pickup=%7B%22latitude%22:37.775837823803705,%22longitude%22:-122.41803507478294,%22addressLine1%22:%22Uber%20HQ%22%7D&vehicle=3bb777a3-7072-4d8c-a8b6-0cd9dcfe650e)
+
+
 # Implementation
 
 **Step 1.** Add the JitPack repository to your build file
@@ -56,14 +64,26 @@ Add it in your root build.gradle at the end of repositories:
 	}
 ```
 
-# Reference
 
 # class UberWebAppLauncher
 
 ## **setPickupLocation**(*double pickupLat, double pickupLon, String pickupAddress, String pickupNickname*)
 
+ - pickupLat:  Latitude coordinate for pickup location. 
+ - pickupLon: Longitude coordinate for pickup location.
+ - pickupAddress: Address line for pickup location. (this value can be set to empty if pickupNickname is provided)
+ - pickupNickname: Name of the pickup place. (this value can be set to empty if pickupAddress is provided)
+
+> Priority on Uber's map view: pickupNickname , pickupAddress
 
 ## **setDropoffLocation**(*double dropoffLat, double dropoffLon, String dropoffAddress, String dropoffNickname*
+
+ - dropoffLat:  Latitude coordinate for dropoff location. 
+ - dropoffLon: Longitude coordinate for dropoff location.
+ - dropoffAddress: Address line for dropoff location. (this value can be set to empty if dropoffNickname is provided)
+ - dropoffNickname: Name of the dropoff place. (this value can be set to empty if dropoffAddress is provided)
+
+> Priority on Uber's map view: dropoffNickname , dropoffAddress
 
 ## **build()**
 
