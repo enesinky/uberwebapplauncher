@@ -4,10 +4,10 @@
 
 This library helps Android developers to let their users continue Uber ride request by using web browser.
 
- - [x] Your Android app can open Uber's request ride page on web browser.
- - [x] Users are not redirected to download app from Play Store.
- - [x] Uber Android app is not required. 
- - [x] Compatible with Huawei Mobile Services.
+ - Your Android app can open Uber's request ride page on web browser.
+ - Users are not redirected to download app from Play Store.
+ - Uber Android app is not required. 
+ - Compatible with Huawei Mobile Services.
 
 # Example
 
@@ -35,7 +35,7 @@ Kotlin:
     val intent = Intent(Intent.ACTION_VIEW, uberWebAppLauncher.getUri())  
     startActivity(intent)
 ```
-
+__
 
 **Output Uri:**
 
