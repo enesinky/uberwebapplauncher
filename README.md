@@ -1,13 +1,16 @@
-
+![Latest Version](https://img.shields.io/badge/latestVersion-1.0-yellow) ![Platform](https://img.shields.io/badge/platform-Android-green) ![Java](https://img.shields.io/badge/language-java-blue) ![Minimum SDK Version](https://img.shields.io/badge/minSDK-19-orange) 
 
 # Uber Web App Launcher Library
 
-This library helps Android developers to let their users continue Uber ride request by using web browser.
+This Android Java library allows developers integrate Uber Ride Request activity using web browser.
+App users can be redirected to web browser and Uber Ride Request page will be loaded with specified Pickup/Dropoff locations.
 
- - Your Android app can open Uber's request ride page on web browser.
- - Users are not redirected to download app from Play Store.
- - Uber Android app is not required. 
- - Compatible with Huawei Mobile Services.
+### Features:
+
+ - Your Android app opens Uber request ride page on web browser.
+ - Users are **NOT** redirected to download app from Play Store.
+ - Uber Android app is not required to perform this action.
+ - Compatible with **Huawei Mobile Services**.
 
 # Example
 
@@ -65,10 +68,10 @@ Add it in your root build.gradle at the end of repositories:
 	}
 ```
 
+# Public Methods
+## class UberWebAppLauncher
 
-# class UberWebAppLauncher
-
-## **setPickupLocation**(*double pickupLat, double pickupLon, String pickupAddress, String pickupNickname*)
+### **setPickupLocation**(*double pickupLat, double pickupLon, String pickupAddress, String pickupNickname*)
 
  - pickupLat:  Latitude coordinate for pickup location. 
  - pickupLon: Longitude coordinate for pickup location.
@@ -77,7 +80,7 @@ Add it in your root build.gradle at the end of repositories:
 
 > Priority on Uber's map view: pickupNickname , pickupAddress
 
-## **setDropoffLocation**(*double dropoffLat, double dropoffLon, String dropoffAddress, String dropoffNickname*
+### **setDropoffLocation**(*double dropoffLat, double dropoffLon, String dropoffAddress, String dropoffNickname*
 
  - dropoffLat:  Latitude coordinate for dropoff location. 
  - dropoffLon: Longitude coordinate for dropoff location.
@@ -86,8 +89,10 @@ Add it in your root build.gradle at the end of repositories:
 
 > Priority on Uber's map view: dropoffNickname , dropoffAddress
 
-## **build()**
+### **build()**
+Creates URI and builds the object
 
-## **getUri()**
+### **getUri()**
+Returns URI.
 
 
