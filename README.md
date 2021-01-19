@@ -11,8 +11,14 @@ App users can be redirected to web browser and Uber Ride Request page will be lo
  - Users are **NOT** redirected to download app from Play Store.
  - Uber Android app is not required to perform this action.
  - Compatible with **Huawei Mobile Services**.
+ 
+### Preview
 
-# Example
+![Screen Record](https://i.imgur.com/qCbG5hy.gif)
+ 
+ 
+
+# Code Example
 
 **Route:**
 from Uber HQ to San Francisco Museum of Modern Art
